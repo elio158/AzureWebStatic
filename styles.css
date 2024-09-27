@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: hsl(224, 97%, 29%);
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -42,7 +42,7 @@ section {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: hsl(224, 97%, 29%);
     color: #fff;
     position: relative;
     bottom: 0;
@@ -54,6 +54,6 @@ input[type="email"] {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #39616d;
     border-radius: 5px;
 }
