@@ -1,59 +1,137 @@
+/* Fuente y reset básico */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f4f8;
 }
 
 header {
-    background: hsl(224, 97%, 29%);
+    background-color: hsl(224, 97%, 35%);
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 10px 0;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700;
 }
 
 main {
-    padding: 20px;
+    padding: 30px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-    margin: 20px 0;
-    padding: 20px;
+    margin: 30px 0;
+    padding: 30px;
     background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: hsl(224, 97%, 29%);
-    color: #fff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: hsl(224, 97%, 29%);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    background: hsl(224, 97%, 94%);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+ul li:hover {
+    background: hsl(224, 97%, 85%);
 }
 
 input[type="text"],
 input[type="email"] {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #39616d;
+    border: 2px solid hsl(224, 97%, 85%);
     border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: hsl(224, 97%, 50%);
+    outline: none;
+}
+
+button {
+    background-color: hsl(224, 97%, 29%);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: hsl(224, 97%, 40%);
+}
+
+#message {
+    margin-top: 20px;
+    color: hsl(120, 67%, 44%);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: hsl(224, 97%, 29%);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
